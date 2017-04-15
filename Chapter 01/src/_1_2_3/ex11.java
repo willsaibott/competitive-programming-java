@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Exercises_1_2_3;
+package _1_2_3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
