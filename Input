@@ -1,0 +1,9 @@
+ [10..11] O(n!), O(n6) e.g. Enumerating permutations (Section 3.2)
+≤ [15..18] O(2n × n2) e.g. DP TSP (Section 3.5.2)
+≤ [18..22] O(2n × n) e.g. DP with bitmask technique (Section 8.3.1)
+≤ 100 O(n4) e.g. DP with 3 dimensions + O(n) loop, nCk=4
+≤ 400 O(n3) e.g. Floyd Warshall’s (Section 4.5)
+≤ 2K O(n2 log2 n) e.g. 2-nested loops + a tree-related DS (Section 2.3)
+≤ 10K O(n2) e.g. Bubble/Selection/Insertion Sort (Section 2.2)
+≤ 1M O(n log2 n) e.g. Merge Sort, building Segment Tree (Section 2.3)
+≤ 100M O(n), O(log2 n), O(1) Most contest problem has n ≤ 1M (I/O bottleneck)

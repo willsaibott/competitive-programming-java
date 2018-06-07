@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class UVA00272 {
+public class UVA272 {
     public static void main(String[] args) {
         defineInputMethod(args);
         boolean first = true;

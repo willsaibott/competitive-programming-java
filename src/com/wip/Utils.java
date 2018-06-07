@@ -27,4 +27,9 @@ public class Utils {
             }
         }
     }
+
+    public static void defineInputMethod(Class myClass) {
+        String className =  myClass.getSimpleName();
+        defineInputMethod(new String[] { className.substring(3) });
+    }
 }
