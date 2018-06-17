@@ -10,15 +10,17 @@ import java.util.Locale;
 public class Utils {
 
     public static void defineInputMethod(String[] args) {
-        if (args.length > 0) {
+        if (args.length > 1) {
             try {
                 String filename = args[0];
                 String current = new File(".").getCanonicalPath();
                 System.out.println("Current dir:" + current);
 
                 Locale.setDefault(Locale.US);
-                System.setIn(new FileInputStream("input/_1/_3/" + filename));
-                System.setOut(new PrintStream(new File("output/1.3/" + filename)));
+                String chapter = args[1].substring(0, args[1].indexOf("."));
+                String sub = args[1].substring(args[1].indexOf(".") + 1);
+                System.setIn(new FileInputStream("input/_" + chapter + "/_" + sub + "/" + filename));
+                System.setOut(new PrintStream(new File("output/" + chapter + "/" + args[1] + "/" + filename)));
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -30,6 +32,11 @@ public class Utils {
 
     public static void defineInputMethod(Class myClass) {
         String className =  myClass.getSimpleName();
-        defineInputMethod(new String[] { className.substring(3) });
+        defineInputMethod(new String[] { className.substring(3), "1.3" });
+    }
+
+    public static void defineInputMethod(Class myClass, String path) {
+        String className =  myClass.getSimpleName();
+        defineInputMethod(new String[] { className.substring(3), path });
     }
 }
