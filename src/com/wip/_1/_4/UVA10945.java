@@ -19,15 +19,19 @@ class Main10945 {
         StringBuilder sb = new StringBuilder();
         StringTokenizer st;
         String line;
-        boolean begin = true;
 
-        int k = 0;
-        int testCases = Integer.parseInt(bf.readLine());
-        while ((k++ < testCases) && (line = bf.readLine()) != null && !line.equals("0")) {
-            String output = "";
+        while ((line = bf.readLine()) != null && !line.equals("DONE")) {
+            line = line.toLowerCase().replaceAll("(\\.|,|\\s|!|\\?)", "");
+            String reverse = (new StringBuilder(line)).reverse().toString();
 
-            if (!begin) sb.append("\n");
-            begin = false;
+            if (reverse.equals(line))
+            {
+                sb.append("You won't be eaten!\n");
+            }
+            else
+            {
+                sb.append("Uh oh..\n");
+            }
         }
 
         System.out.write(sb.toString().getBytes());
