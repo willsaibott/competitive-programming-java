@@ -1,0 +1,20 @@
+1491446632049	Copy file
+1491448104724	Delete element
+1491448376726	Move files
+1491448395842	Move 1 resources to '1.2.3'
+1491448409314	Rename resource 'in_1.2.3.1.txt'
+1491448415073	Rename resource 'in1'
+1491448507621	Delete element
+1491448529100	Move file
+1491448535448	Move file
+1491448557062	Delete element
+1491448578546	Move file
+1491450144505	Rename compilation unit 'main.java'
+1491527823526	Encapsulate field 'month'
+1491527828517	Encapsulate field 'day'
+1491527834773	Encapsulate field 'year'
+1491528010814	Convert local variable 'date' to field
+1491611652932	Copy compilation units
+1491611659661	Delete element
+1491611670972	Delete element
+1491611681444	Delete element
