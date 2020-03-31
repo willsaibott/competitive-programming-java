@@ -19,8 +19,8 @@ public class Utils {
                 Locale.setDefault(Locale.US);
                 String chapter = args[1].substring(0, args[1].indexOf("."));
                 String sub = args[1].substring(args[1].indexOf(".") + 1);
-                System.setIn(new FileInputStream("input/_" + chapter + "/_" + sub + "/" + filename));
-                System.setOut(new PrintStream(new File("output/" + chapter + "/" + args[1] + "/" + filename)));
+                System.setIn(new FileInputStream("input/" + chapter + "/" + sub + "/" + filename));
+                System.setOut(new PrintStream(new File("output/" + chapter + "/" + sub + "/" + filename)));
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
